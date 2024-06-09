@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Home</title>
+    <!-- title icon -->
+    <link
+      rel="shortcut icon"
+      href="image/Logo/svg/logo-black.svg"
+      type="image/x-icon"
+    />
+    <!-- jwt -->
+    
+    <!-- fontawesome -->
+    <link rel="stylesheet" href="css/all.min.css" />
+    <!-- bootstrap -->
+    <link rel="stylesheet" href="css/bootstrap.min.css" />
+    <!-- main css -->
+    <link rel="stylesheet" href="css/home.css" />
+  </head>
+  <body class="">
+    <div class="row vh-100">
+      <div class="col-md-2 main-bg p-0">
+        <div class="side-bar text-center">
+          <div class="logo my-5">
+            <img src="image/Group 34894.png" alt="Logo" class="image-fulid" />
+          </div>
+          <div class="links my-3">
+            <ul>
+              <li
+                class="sec-color fw-bold d-flex justify-content-center align-items-center gap-3 my-5"
+              >
+                <i class="fa-solid fa-house fs-6"></i>
+                <a href="Home.html" class="text-decoration-none sec-color"> Home </a>
+              </li>
+              <li
+                class="text-white fw-bold d-flex justify-content-center align-items-center gap-3 my-5"
+              >
+                <i class="fa-solid fa-user fs-6"></i>
+                <a href="profile.html" class="text-decoration-none text-white">
+                  Profile
+                </a>
+              </li>
+              <li
+                class="text-white fw-bold d-flex justify-content-center align-items-center gap-3 my-5"
+              >
+              <i class="fa-solid fa-up-right-from-square fs-6"></i>
+                <a href="#" class="text-decoration-none text-white offers-select">
+                  Offers
+                </a>
+              </li>
+              <div
+              class="offerOverLay1 position-fixed top-0 start-0 end-0 bottom-0 d-none justify-content-center align-items-center"
+            >
+              <div class="OfferForm  bg-white p-5 position-relative">
+                <div class="text-black position-absolute closeBtnOffer cursor-pointer">
+                  <i class="fa-solid fa-xmark text-black fs-4"></i>
+                </div>
+                <div class="main-title text-center">
+                  <h2 class="main-color fw-bold py-3">Offer</h2>
+                  <img src="image/Group.png" alt="path" class="img-fluid w-25" />
+                </div>
+                <div class="d-flex m-auto align-items-center gap-2">
+                  <button class="btn main-bg text-white w-50 m-auto my-3 d-block GetOffer">
+                    Get Offer
+                  </button>
+                  <button class="btn main-bg text-white w-50  m-auto my-3 d-block GetAcceptedOffer">
+                    Get Accepted Offer
+                  </button>
+                </div>
+                
+              </div>
+            </div>
+              <div
+              class="offerOverLay2 position-fixed top-0 start-0 end-0 bottom-0 d-none justify-content-center align-items-center"
+            >
+              <div class="OfferForm w-50 bg-white p-5 position-relative">
+                <div class="text-black position-absolute  cursor-pointer">
+                  <i class="fa-solid fa-xmark text-black fs-4 closeBtnOffer2"></i>
+                </div>
+                <div class="main-title text-center">
+                  <h2 class="main-color fw-bold py-3">Offer</h2>
+                  <img src="image/Group.png" alt="path" class="img-fluid w-25" />
+                </div>
+                <div class="d-flex m-auto align-items-center gap-2">
+                  <button class="btn main-bg text-white w-50 m-auto my-3 d-block GetInvestorOffers">
+                    Get Investor Offers
+                  </button>
+                  <button class="btn main-bg text-white w-50  m-auto my-3 d-block GetInvestorAcceptedOffers">
+                    Get Investor Accepted Offers
+                  </button>
+                </div>
+                
+              </div>
+            </div>
+              <li
+                class="text-white fw-bold d-flex justify-content-center align-items-center gap-3 my-5"
+              >
+                <i class="fa-solid fa-gear fs-6"></i>
+                <a href="#" class="text-decoration-none text-white">
+                  Settings
+                </a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-10 p-0">
+        <div
+        class="overlay position-fixed top-0 start-0 end-0 bottom-0 d-none justify-content-center align-items-center"
+      >
+        <div class="OfferForm w-50 bg-white p-5 position-relative">
+          <div class="text-black position-absolute closeBtn cursor-pointer">
+            <i class="fa-solid fa-xmark text-black fs-4"></i>
+          </div>
+          <div class="main-title text-center">
+            <h2 class="main-color fw-bold py-3">Offer</h2>
+            <img src="image/Group.png" alt="path" class="img-fluid w-25" />
+          </div>
+          <form>
+            <div>
+              <label class="w-75 m-auto d-block ps-2 py-2">OfferValue :</label>
+              <input
+                type="text"
+                class="form-control w-75 m-auto OfferValue"
+                placeholder="OfferValue *Add Number"
+              />
+            </div>
+            <div>
+              <label class="w-75 m-auto d-block ps-2 py-2"
+                >ProfitRate :</label
+              >
+              <input
+                type="text"
+                class="form-control w-75 m-auto ProfitRate"
+                placeholder="ProfitRate *Add Number"
+              />
+            </div>
+            <div>
+              <label class="w-75 m-auto d-block ps-2 py-2"
+                >Description :</label
+              >
+              <input class="form-control w-75 m-auto Description" placeholder="Description"></input>
+            </div>
+          </form>
+          <p class="text-danger text-center errors"></p>
+          <button class="btn main-bg text-white w-75 m-auto my-3 d-block sendOffer">
+            Send Offer
+          </button>
+        </div>
+      </div>
+        <div class="main-home">
+          <div class="container m-auto">
+            <div class="searchbar py-3">
+              <div class="row align-items-center">
+                <div class="col-11">
+                  <div class="">
+                    <input
+                      type="search"
+                      class="form-control py-1 px-2"
+                      placeholder="Search Input"
+                    />
+                  </div>
+                </div>
+                <div class="col-1 px-5">
+                  <div class="user-img rounded-circle overflow-hidden">
+                    <img
+                      src="image/main-qimg-6d72b77c81c9841bd98fc806d702e859-lq.jpeg"
+                      alt="user"
+                      class="img-fluid"
+                    />
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="postss py-3">
+              <div class="row g-5">
+                <div class="col-md-6">
+                  <div class="">
+                    <div class="posts p-5 px-3 bg-white">
+                      <div class="post-header">
+                        <h3 class="main-color fw-bold">Posts</h3>
+                        <div class="line-under-post"></div>
+                      </div>
+                      <div class="post-contents py-3">                   
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-md-6">
+                  <div class="connect&requests mb-5">
+                    <div class="connect bg-white p-3">
+                      <div class="connect-head">
+                        <div class="connect-title main-color mb-3">
+                          <p>Inivitations</p>
+                        </div>
+                      </div>
+                      <div class="connects">
+                       
+                      </div>
+                    </div>
+                  </div>
+                  <div class="connect&requests">
+                    <div class="connect bg-white p-3">
+                      <div class="connect-head">
+                        <div class="connect-title main-color mb-3">
+                          <p>People you may know</p>
+                        </div>
+                      </div>
+                      <div class="connections">
+
+                      </div>              
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script src="js/home.js"></script>
+  </body>
+</html>

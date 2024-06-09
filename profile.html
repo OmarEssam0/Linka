@@ -1,0 +1,358 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <!-- title icon -->
+    <link
+      rel="shortcut icon"
+      href="image/threejs-original.png"
+      type="image/x-icon"
+    />
+    <!-- fontawesome -->
+    <link rel="stylesheet" href="css/all.min.css" />
+    <!-- bootstrap -->
+    <link rel="stylesheet" href="css/bootstrap.min.css" />
+    <!-- main css -->
+    <link rel="stylesheet" href="css/home.css" />
+  </head>
+  <body class="main-home">
+    <div class="row">
+      <div class="col-md-2 main-bg p-0">
+        <div class="side-bar text-center">
+          <div class="logo my-5">
+            <img src="image/Group 34894.png" alt="Logo" class="image-fulid" />
+          </div>
+          <div class="links my-3">
+            <ul>
+              <li
+                class="text-white fw-bold d-flex justify-content-center align-items-center gap-3 my-5"
+              >
+                <i class="fa-solid fa-house fs-6"></i>
+                <a href="Home.html" class="text-decoration-none text-white">
+                  Home
+                </a>
+              </li>
+              <li
+                class="sec-color fw-bold d-flex justify-content-center align-items-center gap-3 my-5"
+              >
+                <i class="fa-solid fa-user fs-6"></i>
+                <a href="profile.html" class="text-decoration-none sec-color">
+                  Profile
+                </a>
+              </li>
+              <li
+              class="text-white fw-bold d-flex justify-content-center align-items-center gap-3 my-5"
+            >
+            <i class="fa-solid fa-up-right-from-square fs-6"></i>
+              <a href="#" class="text-decoration-none text-white offers-select">
+                Offers
+              </a>
+            </li>
+            <div
+              class="offerOverLay1 position-fixed top-0 start-0 end-0 bottom-0 d-none justify-content-center align-items-center"
+            >
+              <div class="OfferForm  bg-white p-5 position-relative">
+                <div class="text-black position-absolute closeBtnOffer cursor-pointer">
+                  <i class="fa-solid fa-xmark text-black fs-4"></i>
+                </div>
+                <div class="main-title text-center">
+                  <h2 class="main-color fw-bold py-3">Offer</h2>
+                  <img src="image/Group.png" alt="path" class="img-fluid w-25" />
+                </div>
+                <div class="d-flex m-auto align-items-center gap-2">
+                  <button class="btn main-bg text-white w-50 m-auto my-3 d-block GetOffer">
+                    Get Offer
+                  </button>
+                  <button class="btn main-bg text-white w-50  m-auto my-3 d-block GetAcceptedOffer">
+                    Get Accepted Offer
+                  </button>
+                </div>
+                
+              </div>
+            </div>
+              <div
+              class="offerOverLay2 position-fixed top-0 start-0 end-0 bottom-0 d-none justify-content-center align-items-center"
+            >
+              <div class="OfferForm w-50 bg-white p-5 position-relative">
+                <div class="text-black position-absolute  cursor-pointer">
+                  <i class="fa-solid fa-xmark text-black fs-4 closeBtnOffer2"></i>
+                </div>
+                <div class="main-title text-center">
+                  <h2 class="main-color fw-bold py-3">Offer</h2>
+                  <img src="image/Group.png" alt="path" class="img-fluid w-25" />
+                </div>
+                <div class="d-flex m-auto align-items-center gap-2">
+                  <button class="btn main-bg text-white w-50 m-auto my-3 d-block GetInvestorOffers">
+                    Get Investor Offers
+                  </button>
+                  <button class="btn main-bg text-white w-50  m-auto my-3 d-block GetInvestorAcceptedOffers">
+                    Get Investor Accepted Offers
+                  </button>
+                </div>
+                
+              </div>
+            </div>
+              <div
+              class="offerOverLay3 position-fixed top-0 start-0 end-0 bottom-0 d-none justify-content-center align-items-center"
+            >
+              <div class="OfferForm w-50 bg-white p-5 position-relative">
+                <div class="text-black position-absolute  cursor-pointer">
+                  <i class="fa-solid fa-xmark text-black fs-4 closeBtnOffer3"></i>
+                </div>
+                <div class="main-title text-center">
+                  <h2 class="main-color fw-bold py-3">ADD PHOTO</h2>
+                  <img src="image/Group.png" alt="path" class="img-fluid w-25" />
+                </div>
+                <form>
+                  <div>
+                    <label class="w-75 m-auto d-block ps-2 py-2"
+                      >Add Photo :</label
+                    >
+                    <input
+                      type="file"
+                      class="form-control w-75 m-auto profilePicture"
+                      placeholder="NationalCard"
+                    />
+                  </div>
+                </form>
+                <button class="btn main-bg border-0 btn-primary my-2 w-75 m-auto ADDPHOTO">
+                  Add Photo
+                </button>
+              </div>
+            </div>
+              <div
+              class="offerOverLay4 position-fixed top-0 start-0 end-0 bottom-0 d-none justify-content-center align-items-center"
+            >
+              <div class="OfferForm w-50 bg-white p-5 position-relative">
+                <div class="text-black position-absolute  cursor-pointer">
+                  <i class="fa-solid fa-xmark text-black fs-4 closeBtnOffer4"></i>
+                </div>
+                <div class="main-title text-center">
+                  <h2 class="main-color fw-bold py-3">ADD Qualifications & interests</h2>
+                  <img src="image/Group.png" alt="path" class="img-fluid w-25" />
+                </div>
+                <form>
+                  <div>
+                    <label class="w-75 m-auto d-block ps-2 py-2"
+                      >Add Qualifications :</label
+                    >
+                    <input
+                      type="text"
+                      class="form-control w-75 m-auto AddQualifications1"
+                      placeholder="Add Qualifications"
+                    />
+                  </div>
+                  <div>
+                    <label class="w-75 m-auto d-block ps-2 py-2"
+                      >Add Interests :</label
+                    >
+                    <input
+                      type="text"
+                      class="form-control w-75 m-auto AddInterests"
+                      placeholder="Add interests"
+                    />
+                  </div>
+                </form>
+                <button class="btn main-bg border-0 btn-primary my-2 w-75 m-auto AddQualifications">
+                  ADD Qualifications & interests
+                </button>
+              </div>
+            </div>
+              <li
+                class="text-white fw-bold d-flex justify-content-center align-items-center gap-3 my-5"
+              >
+                <i class="fa-solid fa-gear fs-6"></i>
+                <a href="#" class="text-decoration-none text-white">
+                  Settings
+                </a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-10 p-0">
+        <div
+          class="overlay position-fixed top-0 start-0 end-0 bottom-0 d-none justify-content-center align-items-center"
+        >
+          <div class="idenetyForm w-50 bg-white p-5 position-relative">
+            <div class="text-black position-absolute closeBtn cursor-pointer">
+              <i class="fa-solid fa-xmark text-black fs-4"></i>
+            </div>
+            <div class="main-title text-center">
+              <h2 class="main-color fw-bold py-3">Identity Information</h2>
+              <img src="image/Group.png" alt="path" class="img-fluid w-25" />
+            </div>
+            <form>
+              <div>
+                <label class="w-75 m-auto d-block ps-2 py-2"
+                  >National ID :</label
+                >
+                <input
+                  type="text"
+                  class="form-control w-75 m-auto NationalID"
+                  placeholder="National ID"
+                />
+              </div>
+              <div>
+                <label class="w-75 m-auto d-block ps-2 py-2">RealName :</label>
+                <input
+                  type="text"
+                  class="form-control w-75 m-auto realName"
+                  placeholder="RealName"
+                />
+              </div>
+              <div>
+                <label class="w-75 m-auto d-block ps-2 py-2"
+                  >NationalCard :</label
+                >
+                <input
+                  type="file"
+                  class="form-control w-75 m-auto NationalCard"
+                  placeholder="NationalCard"
+                />
+              </div>
+            </form>
+            <div class="text-center alert alert-danger message w-75 m-auto my-3 d-none">
+
+            </div>
+            <button class="btn main-bg text-white w-75 m-auto my-3 d-block addIdentity1">
+              Send Data
+            </button>
+          </div>
+        </div>
+        <div
+          class="overlay2 position-fixed top-0 start-0 end-0 bottom-0 d-none justify-content-center align-items-center"
+        >
+          <div class="idenetyForm w-50 bg-white p-5 position-relative">
+            <div class="text-black position-absolute closeBtn2 cursor-pointer">
+              <i class="fa-solid fa-xmark text-black fs-4"></i>
+            </div>
+            <div class="main-title text-center">
+              <h2 class="main-color fw-bold py-3">Add Post</h2>
+              <img src="image/Group.png" alt="path" class="img-fluid w-25" />
+            </div>
+            <form>
+              <div>
+                <label class="w-75 m-auto d-block ps-2 py-2"
+                  >Content :</label
+                >
+                <input
+                  type="text"
+                  class="form-control w-75 m-auto Content"
+                  placeholder="Content"
+                />
+              </div>
+              <div>
+                <label class="w-75 m-auto d-block ps-2 py-2"
+                  >Attachments :</label
+                >
+                <input
+                  type="file"
+                  class="form-control w-75 m-auto Attachmentsfile"
+                  placeholder="Attachmentsfile"
+                />
+              </div>
+            </form>
+            <div class="alert alert-danger w-75 m-auto my-3 message1 d-none">
+
+            </div>
+            <button class="btn main-bg text-white w-75 m-auto my-3 d-block addPost">
+              Add Post
+            </button>
+          </div>
+        </div>
+        <div class="main-home">
+          <div class="container m-auto">
+            <div class="searchbar py-3">
+              <div class="row align-items-center">
+                <div class="col-11">
+                  <div class="">
+                    <input
+                      type="search"
+                      class="form-control py-1 px-2"
+                      placeholder="Search Input"
+                    />
+                  </div>
+                </div>
+                <div class="col-1 px-5">
+                  <div class="user-img rounded-circle overflow-hidden">
+                    <img
+                      src="image/main-qimg-6d72b77c81c9841bd98fc806d702e859-lq.jpeg"
+                      alt="user"
+                      class="img-fluid"
+                    />
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="profile-cover">
+              <div class="profile-img">
+                <img
+                  src="image/dd6cc47452fc2937c1b30e776a509e7a.jpeg"
+                  alt="cover"
+                  class="img-fluid w-100"
+                />
+              </div>
+              <div
+                class="profile-diteals bg-white px-5 py-2 d-flex justify-content-between align-items-center"
+              >
+                <div class="right d-flex align-items-center gap-2">
+                  <div class="pro-img">
+                    <div>
+                      <img
+                      src="image/ee3e2db40ae1eaff48da124f2fe42d6b.jpeg"
+                      alt="pro"
+                      class="img-fluid"
+                    />
+                    </div>
+                    <div class="addPhoto d-flex justify-content-center align-items-center">
+                      <i class="fa-solid fa-camera"></i>
+                    </div>
+                  </div>
+                  <div class="profile=content">
+                    <p class="fw-bold main-color fs-3 firstAndLast"></p>
+                    <span class="text-black-50 fs-6 qualication d-block"></span>
+                    <span class="text-black-50 fs-6 inte d-block"></span>
+                    <span class="text-black-50 fs-6 role"></span>
+                  </div>
+                </div>
+                <div class="left">
+                  <button class="identity-information btn main-color">
+                    <i class="fa-solid fa-pen-to-square fs-3"></i>
+                  </button>
+
+                  <button class="btn main-color py-2 addqualifications fw-bold">
+                    Add qualifications & interests
+                  </button>
+                  <button class="btn main-bg text-white px-5 py-2 addPostBtn">
+                    Add Post
+                  </button>
+                </div>
+              </div>
+            </div>
+            <div class="postss py-3">
+              <div class="row g-5">
+                <div class="col-md-6 m-auto">
+                  <div class="">
+                    <div class="posts p-5 px-3 bg-white">
+                      <div class="post-header">
+                        <h3 class="main-color fw-bold">Posts</h3>
+                        <div class="line-under-post"></div>
+                      </div>
+                      <div class="post-contents py-3">
+                        
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script src="js/profile.js"></script>
+  </body>
+</html>

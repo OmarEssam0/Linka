@@ -1,0 +1,136 @@
+* {
+    margin: 0 !important;
+    box-sizing: border-box !important;
+}
+ul{
+    padding: 0;
+}
+:root {
+    --main-color: #3F5D5A;
+    --gray-color: #807676;
+    --secound-color: #E0E34D;
+
+}
+
+.main-color {
+    color: var(--main-color);
+}
+.gray-color{
+    color: var(--gray-color);
+}
+.main-bg {
+    background-color: var(--main-color);
+}
+.sec-color{
+    color: var(--secound-color);
+}
+.sec-bg{
+    background-color: var(--secound-color);
+}
+.user-img{
+    width: 40px;
+    height: 40px;
+}
+.main-home{
+    background-color: #f4eeee;
+}
+.side-bar{
+   width: 100%;
+}
+.line-under-post{
+    width: 5%;
+    height: 5px;
+    border-radius: 10px;
+    background-color: var(--secound-color);
+}
+.post{
+    border-radius: 10px 10px 0px 0px;
+    overflow: hidden;
+}
+.img-user  {
+    width: 90px;
+    height: 90px;
+    overflow: hidden;
+    border-radius: 50%;
+}
+.post-user , .connects{
+    border-top: 1px solid rgb(240, 239, 239);
+}
+.post-content , .connect-title p{
+    font-weight: 600;
+}
+.post-img{
+    border-radius: 20px;
+    overflow: hidden;
+}
+.ConnectImg{
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    overflow: hidden;
+}
+.btn:hover {
+    color: white;
+    background-color: var(--main-color);
+    border-color: var(--main-color);
+}
+.connections , .connects{
+    overflow-y: auto;
+    max-height: 350px;
+}
+.connections::-webkit-scrollbar , .connects::-webkit-scrollbar {
+    width: 10px;
+    background-color: #ccc;
+}
+.connections::-webkit-scrollbar-thumb , .connects::-webkit-scrollbar-thumb{
+    background-color: var(--main-color);
+    border-radius: 20px;
+}
+
+.profile-img{
+    height: 280px;
+    overflow: hidden;
+}
+.pro-img{
+    width: 188px;
+    height: 188px;
+    border-radius: 50%;
+    /* overflow: hidden;     */
+    position: relative;
+    bottom: 110px ;
+}
+.pro-img img{
+    width: 188px;
+    height: 188px;
+    border-radius: 50%;
+    overflow: hidden;
+    position: relative;
+    /* bottom: 110px ; */
+}
+.addPhoto{
+    width: 50px;
+    height: 50px;
+    bottom: 0;
+    right: 0;
+    border-radius: 50%;
+    overflow: hidden;
+    position: absolute;
+    color: white;
+    background-color: var(--main-color);
+    z-index: 999;
+    cursor: pointer;
+}
+.cursor-pointer{
+    cursor: pointer;
+}
+
+.heart-color{
+    color: rgb(219, 216, 216);
+}
+.overlay ,.overlay2 , .offerOverLay1 , .offerOverLay2 ,  .offerOverLay3 , .offerOverLay4 {
+    z-index: 9999;
+    background-color: rgba(0, 0, 0, .5);
+}
+.closeBtn{
+    right: 4%;
+}

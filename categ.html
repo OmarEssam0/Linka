@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Home</title>
+    <!-- title icon -->
+    <link
+      rel="shortcut icon"
+      href="image/Logo/svg/logo-black.svg"
+      type="image/x-icon"
+    />
+    <!-- jwt -->
+
+    <!-- fontawesome -->
+    <link rel="stylesheet" href="css/all.min.css" />
+    <!-- bootstrap -->
+    <link rel="stylesheet" href="css/bootstrap.min.css" />
+    <!-- main css -->
+    <link rel="stylesheet" href="css/home.css" />
+  </head>
+  <body class="">
+    <div class="row vh-100">
+      <div class="col-md-2 main-bg p-0">
+        <div class="side-bar text-center">
+          <div class="logo my-5">
+            <img src="image/Group 34894.png" alt="Logo" class="image-fulid" />
+          </div>
+          <div class="links my-3">
+            <ul>
+              <li
+                class="text-white fw-bold d-flex justify-content-center align-items-center gap-3 my-5"
+              >
+                <i class="fa-solid fa-house fs-6"></i>
+                <a href="admin.html" class="text-decoration-none text-white"> Admin </a>
+              </li>
+              <li
+                class="sec-color fw-bold d-flex justify-content-center align-items-center gap-3 my-5"
+              >
+                <i class="fa-solid fa-user fs-6"></i>
+                <a href="#" class="text-decoration-none sec-color">
+                  Categories
+                </a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-10 p-0">
+        <div
+          class="overlay2 position-fixed top-0 start-0 end-0 bottom-0 d-none justify-content-center align-items-center"
+        >
+          <div class="idenetyForm w-50 bg-white p-5 position-relative">
+            <div class="text-black position-absolute closeBtn2 cursor-pointer">
+              <i class="fa-solid fa-xmark text-black fs-4">
+              </i>
+            </div>
+            <div class="main-title text-center">
+              <h2 class="main-color fw-bold py-3">Update Role</h2>
+              <img src="image/Group.png" alt="path" class="img-fluid w-25" />
+            </div>
+            <form>
+                <div>
+                    <label class="w-75 m-auto d-block ps-2 py-2">ID :</label>
+                    <input
+                      type="text"
+                      class="form-control w-75 m-auto id"
+                      placeholder="ID"
+                    />
+                  </div>
+                <div>
+                    <label class="w-75 m-auto d-block ps-2 py-2">user Name :</label>
+                    <input
+                      type="text"
+                      class="form-control w-75 m-auto userName"
+                      placeholder="User Name"
+                    />
+                  </div>
+                <div>
+                    <label class="w-75 m-auto d-block ps-2 py-2">IdUser :</label>
+                    <input
+                      type="text"
+                      class="form-control w-75 m-auto idUser"
+                      placeholder="ID User"
+                    />
+                  </div>
+              <div class="w-75 m-auto">
+                <p class=" d-block ps-2 py-2">Select New Role :</p>
+                
+                <input
+                  type="radio"
+                  id="admin"
+                  class=" CategoryId"
+                  name="role"
+                  value="Admin"
+                />
+                <label for="admin" class="me-3">Admin</label>
+                <input
+                  type="radio"
+                  class="CategoryId"
+                  id="Investor"
+                  name="role"
+                  value="Investor"
+                />
+                <label for="Investor" class="me-3">Investor</label>
+                <input
+                  type="radio"
+                  id="User"
+                  class=" CategoryId"
+                  name="role"
+                  value="User"
+                />
+                <label for="User" class="me-3">User</label>
+              </div>
+            </form>
+            <div class="alert alert-danger w-75 m-auto my-3 message1 d-none">
+
+            </div>
+            <button class="btn main-bg text-white w-75 m-auto my-3 d-block addPost" onclick="updateRole()">
+              Change Role
+            </button>
+          </div>
+        </div>
+        <div class="main-home">
+          <div class="users bg-white w-100">
+            <div class="post-header p-4">
+              <h3 class="main-color fw-bold py-2">Categories</h3>
+              <div class="line-under-post"></div>
+            </div>
+           <div class="row">
+            <div class="col-md-12">
+                <div class="cat">
+                    <table class="table-bordered text-center xx w-75 m-auto">
+                        <thead class="main-bg text-white">
+                            <th>name</th>
+                            <th>ADD</th>
+                            <th>Remove</th>
+                        </thead>
+                        <tbody></tbody>
+                    </table>
+                </div>
+            </div>
+            <div class="col-md-12">
+                <div class="posts px-3 bg-white">
+                    <div class="post-header">
+                      <h3 class="main-color fw-bold">Posts</h3>
+                      <div class="line-under-post"></div>
+                    </div>
+                    <div class="post-contents py-3 w-50 m-auto">   
+                        
+                    </div>
+                  </div>
+            </div>
+           </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script src="js/cat.js"></script>
+  </body>
+</html>
